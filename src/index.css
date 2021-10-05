@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #e66465, #dfe591);
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid green;
+  text-align: center;
+  justify-content: center;
+}
+
+.app h1 {
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  margin: 40px 0;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form input {
+  height: 50px;
+  width: 400px;
+  border: none;
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+
+.form button {
+  height: 50px;
+  border: none;
+  width: 50px;
+  cursor: pointer;
+  background-color: teal;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(101, 235, 75);
+}
+
+.form button:hover {
+  background-color: rgb(114, 114, 114);
+  color: white;
+}
+
+.aside {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.filter {
+  margin-left: 50px;
+  height: 40px;
+  border: none;
+  padding-left: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #c4762d;
+}
+
+.tasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 5px;
+  width: 510px;
+  margin: 10px auto;
+  border-radius: 5px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.tasks h2 {
+  background-color: aliceblue;
+  height: 100%;
+  width: 450px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.tasks button {
+  height: 100%;
+  width: 60px;
+  border: none;
+  font-weight: 600;
+  color: rgb(34, 33, 33);
+  cursor: pointer;
+}
+
+.check {
+  background-color: chartreuse;
+}
+
+.delete {
+  background-color: tomato;
+}
+
+h2.uncompleted {
+  text-decoration: line-through;
+  background-color: rgb(212, 214, 214);
+}
+
+.check.uncompleted {
+  background-color: rgb(138, 143, 143);
+}
